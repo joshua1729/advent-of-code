@@ -14,7 +14,7 @@ print(opcode[0])
 
 
 
-#Solution for the 2nd part
+#Solution for the 2nd part. Lazy mode error-handling
 
 for x in range (0,100):
     for y in range(0,100):
