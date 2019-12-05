@@ -14,7 +14,7 @@ df['fuel']=(np.floor(df['module_weight']/3))-2
 print(df['fuel'].sum())
 
 
-#Solution of the seocnd part
+#Solution of the second part
 
 #Function to calculate total fuel
 def total_fuel(weight,tot_fuel,fuel):
