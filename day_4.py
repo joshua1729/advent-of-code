@@ -11,3 +11,18 @@ for i in range(start_range,end_range):
             valid_password = valid_password+1 
 
 print(valid_password)
+
+
+# Solution for part 2
+for i in range(start_range,end_range):
+    k=str(i)
+    if((k[0]==k[1]) or (k[1]==k[2]) or (k[2]==k[3]) or (k[3]==k[4]) or (k[4]==k[5])):
+        if((k[0]<=k[1]) and (k[1]<=k[2]) and (k[2]<=k[3]) and (k[3]<=k[4]) and (k[4]<=k[5])):
+            flag=0
+            for char in k:
+                if (k.count(char)==2):
+                    flag=1
+            if(flag==1):
+                valid_password = valid_password+1
+            
+print(valid_password)
