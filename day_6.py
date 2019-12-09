@@ -25,3 +25,11 @@ for key in sp:
     orbits = orbits + (len(sp[key])-1)
 
 print(orbits)
+
+
+# Part 2
+#Converting the graph to an undirected graph
+UG = G.to_undirected()
+
+#Finding the orbital transfers needed between YOU and SAN
+print(len(nx.shortest_path(UG,source='YOU',target='SAN'))-3)
